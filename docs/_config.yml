@@ -1,10 +1,10 @@
 # Site settings
-title: Jekyll Doc Theme
+title: 돌로구니 기술 블로그
 email: dololgun@gmail.com
 description: >
   Jekyll Template for Project Websites
   providing documentation and blog post pages.
-lang: en-US
+lang: ko-KR
 
 baseurl: "/project01" # the subpath of your site, e.g. /blog/
 url: https://dololgun.github.io/project01 # the base hostname & protocol for your site
@@ -46,6 +46,15 @@ defaults:
   values:
     layout: docs
     sectionid: docs
+    seo:
+      type: "WebPage"
+
+- scope:
+    path: _docs
+    type: docs
+  values:
+    layout: docs
+    sectionid: docs1
     seo:
       type: "WebPage"
 
