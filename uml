@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-07-08T23:48:40.745Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36 Edg/91.0.864.64" etag="E7Xu8mjV4xcIBpjJy4YP" version="14.8.5" type="github">
+<mxfile host="app.diagrams.net" modified="2021-07-08T23:59:18.295Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36 Edg/91.0.864.64" etag="T5XlIi0Yw1xbzGFLE2n0" version="14.8.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="860" dy="581" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -113,6 +113,39 @@
         </mxCell>
         <mxCell id="ifTm2btWvBNGKeNF692C-1" value="Note" style="shape=note;size=20;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="390" y="250" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ifTm2btWvBNGKeNF692C-11" value="&amp;lt;&amp;lt;keyword&amp;gt;&amp;gt;&lt;br&gt;&lt;b&gt;TCustomSHISDataSet&lt;/b&gt;&lt;br&gt;{abstract}" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=55;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="1000" y="144" width="440" height="392" as="geometry" />
+        </mxCell>
+        <mxCell id="ifTm2btWvBNGKeNF692C-12" value="attributes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ifTm2btWvBNGKeNF692C-11">
+          <mxGeometry y="55" width="440" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ifTm2btWvBNGKeNF692C-13" value="attribute1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ifTm2btWvBNGKeNF692C-11">
+          <mxGeometry y="75" width="440" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ifTm2btWvBNGKeNF692C-14" value="inherited attribute2" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#808080;" vertex="1" parent="ifTm2btWvBNGKeNF692C-11">
+          <mxGeometry y="95" width="440" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ifTm2btWvBNGKeNF692C-15" value="..." style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ifTm2btWvBNGKeNF692C-11">
+          <mxGeometry y="115" width="440" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ifTm2btWvBNGKeNF692C-16" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="ifTm2btWvBNGKeNF692C-11">
+          <mxGeometry y="135" width="440" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="ifTm2btWvBNGKeNF692C-17" value="operations" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ifTm2btWvBNGKeNF692C-11">
+          <mxGeometry y="143" width="440" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ifTm2btWvBNGKeNF692C-20" value="DoInject(Message: TSMCSCustomMessage);" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ifTm2btWvBNGKeNF692C-11">
+          <mxGeometry y="163" width="440" height="19" as="geometry" />
+        </mxCell>
+        <mxCell id="ifTm2btWvBNGKeNF692C-21" value="-&amp;nbsp;DoBegin(Message);&lt;br&gt;- 데이터 할당 From Message&lt;br&gt;- DoEnd(Message);" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="ifTm2btWvBNGKeNF692C-11">
+          <mxGeometry y="182" width="440" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="ifTm2btWvBNGKeNF692C-18" value="DoBegin(Message);" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="ifTm2btWvBNGKeNF692C-11">
+          <mxGeometry y="240" width="440" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ifTm2btWvBNGKeNF692C-19" value="1. Provider.OnMultiConnect가 없고 Appending모드의 시작인경우,&lt;br&gt;&amp;nbsp; &amp;nbsp; Provider.OnMultiConnect가 없고 Appending모드가 아니고, 리프레쉬상태&lt;br&gt;&amp;nbsp; DoClear" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="ifTm2btWvBNGKeNF692C-11">
+          <mxGeometry y="260" width="440" height="132" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
