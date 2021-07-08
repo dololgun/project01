@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-07-08T23:31:51.059Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36 Edg/91.0.864.64" etag="AleKV_3aftR-teRmmhDg" version="14.8.5" type="github">
+<mxfile host="app.diagrams.net" modified="2021-07-08T23:48:40.745Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36 Edg/91.0.864.64" etag="E7Xu8mjV4xcIBpjJy4YP" version="14.8.5" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
     <mxGraphModel dx="860" dy="581" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -68,7 +68,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="zkfFHV4jXpPFQw0GAbJ--17" value="TShisProvider" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;rounded=0;shadow=0;strokeWidth=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="600" y="144" width="340" height="480" as="geometry">
+          <mxGeometry x="600" y="144" width="340" height="896" as="geometry">
             <mxRectangle x="550" y="140" width="160" height="26" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
@@ -78,20 +78,38 @@
         <mxCell id="zkfFHV4jXpPFQw0GAbJ--19" value="FMultiConnectList : TList&lt;TSHISConnectInfo&gt;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" parent="zkfFHV4jXpPFQw0GAbJ--17" vertex="1">
           <mxGeometry y="52" width="340" height="26" as="geometry" />
         </mxCell>
+        <mxCell id="ifTm2btWvBNGKeNF692C-7" value="FUseDirect : Boolean" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--17">
+          <mxGeometry y="78" width="340" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="ifTm2btWvBNGKeNF692C-8" value="FList: TDataSetList; = TList&lt;TCustomSHISDataSet&gt;;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rounded=0;shadow=0;html=0;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--17">
+          <mxGeometry y="104" width="340" height="26" as="geometry" />
+        </mxCell>
         <mxCell id="zkfFHV4jXpPFQw0GAbJ--23" value="" style="line;html=1;strokeWidth=1;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--17" vertex="1">
-          <mxGeometry y="78" width="340" height="8" as="geometry" />
+          <mxGeometry y="130" width="340" height="8" as="geometry" />
         </mxCell>
         <mxCell id="zkfFHV4jXpPFQw0GAbJ--24" value="Start(Master: TObject): Boolean" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="zkfFHV4jXpPFQw0GAbJ--17" vertex="1">
-          <mxGeometry y="86" width="340" height="28" as="geometry" />
+          <mxGeometry y="138" width="340" height="28" as="geometry" />
         </mxCell>
         <mxCell id="ifTm2btWvBNGKeNF692C-2" value="Start&lt;br&gt;-&amp;nbsp;FOnBeforeRequest (할당되어 있다면)&lt;br&gt;-&amp;nbsp;Response := SendRequest(RequestJSON, MasterHandle);&lt;br&gt;- 1. 멀티컨넥트 환경&lt;br&gt;&amp;nbsp; -&amp;nbsp;Result := SetMultiConnectResponse(Response);&lt;br&gt;- 2. 일반환경&lt;br&gt;&amp;nbsp; -&amp;nbsp;Result := SetResponse(AMessageTrader, Response, MasterHandle);" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--17">
-          <mxGeometry y="114" width="340" height="132" as="geometry" />
+          <mxGeometry y="166" width="340" height="132" as="geometry" />
         </mxCell>
         <mxCell id="ifTm2btWvBNGKeNF692C-3" value="SendRequest(RequestJSON: TJSONObject; MasterHandle: String): IRestResponse;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--17">
-          <mxGeometry y="246" width="340" height="28" as="geometry" />
+          <mxGeometry y="298" width="340" height="28" as="geometry" />
         </mxCell>
         <mxCell id="ifTm2btWvBNGKeNF692C-4" value="SendRequest&lt;br&gt;1. 멀티컨넥트환경&lt;br&gt;&amp;nbsp; -&amp;nbsp;&lt;span&gt;FOnMultiConnect&lt;br&gt;&lt;/span&gt;&amp;nbsp; -&amp;nbsp;FMultiConnectList 만큼 For 문 수행&lt;br&gt;&amp;nbsp; &amp;nbsp; - 전역MultiConnectList와 정합성 체크&lt;br&gt;&amp;nbsp; &amp;nbsp; A.로그인한 병원&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; -&amp;nbsp;&lt;span&gt;Result := SendPost;&lt;br&gt;&lt;/span&gt;&amp;nbsp; &amp;nbsp; B.타 병원&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; - 전역RestClient 접속정보 타 병원으로 변경&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; -&amp;nbsp;ConnectInfo.RestResponse := SendPost;&lt;br&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; - 전역RestClient 접속정보 원 병원으로 되돌림&lt;br&gt;2. 일반환경&lt;br&gt;&amp;nbsp; -&amp;nbsp;Result := SendPost;" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--17">
-          <mxGeometry y="274" width="340" height="206" as="geometry" />
+          <mxGeometry y="326" width="340" height="206" as="geometry" />
+        </mxCell>
+        <mxCell id="ifTm2btWvBNGKeNF692C-5" value="SetResponse(AMessageTrader: TSMCSCustomMessageThrower; Response: IRestResponse; MasterHandle: String): Boolean;" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--17">
+          <mxGeometry y="532" width="340" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="ifTm2btWvBNGKeNF692C-6" value="1. Not&amp;nbsp;FUseDirect(기본은 False 이기 때문에 대부분 탄다)&lt;br&gt;&amp;nbsp; - AMessage.Data.FromJSON(FData);&lt;br&gt;&amp;nbsp; -&amp;nbsp;&lt;span&gt;DoInjectToTables(AMessage);&lt;br&gt;2. FUseDirect&lt;br&gt;&amp;nbsp; - DoInjectWithJSON(AMessage, FData);&lt;br&gt;&lt;/span&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--17">
+          <mxGeometry y="560" width="340" height="206" as="geometry" />
+        </mxCell>
+        <mxCell id="ifTm2btWvBNGKeNF692C-9" value="DoInjectToTables(Message: TSMCSCustomMessage);" style="text;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--17">
+          <mxGeometry y="766" width="340" height="28" as="geometry" />
+        </mxCell>
+        <mxCell id="ifTm2btWvBNGKeNF692C-10" value="&lt;br&gt;&lt;span&gt;-&amp;nbsp;&lt;/span&gt;&lt;span&gt;FList만큼 For&lt;br&gt;&lt;/span&gt;&lt;span&gt;&amp;nbsp; -&amp;nbsp;Table:= FList[Index];&lt;br&gt;&amp;nbsp; - Table.DoInject(Message);&lt;br&gt;&lt;/span&gt;" style="shape=note;size=20;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="zkfFHV4jXpPFQw0GAbJ--17">
+          <mxGeometry y="794" width="340" height="86" as="geometry" />
         </mxCell>
         <mxCell id="ifTm2btWvBNGKeNF692C-1" value="Note" style="shape=note;size=20;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="390" y="250" width="100" height="100" as="geometry" />
